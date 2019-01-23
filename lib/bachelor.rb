@@ -54,5 +54,6 @@ end
 
 def get_average_age_for_season(data, season)
   contestants = data[season]
-  age_sum = contestants.sum {|i| i['age']
+  age_sum = contestants.sum {|i| i['age'].to_i}
+  
 end
