@@ -48,7 +48,7 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  contestant = match_contestant(all_contestants(data), 'hometown' hometown)
+  contestant = match_contestant(all_contestants(data), 'hometown', hometown)
   contestant['occupation']
 end
 
